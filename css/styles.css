@@ -99,3 +99,22 @@ nav {
   left: 249px;
   top: -16px;
 }
+
+#main-menu > li > a {
+  position: relative;
+}
+
+#main-menu > li > a::before {
+  content: "";
+  height: 4px;
+  width: 0;
+  background-color: #f00;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu > li:hover > a::before {
+  width: 100%;
+}
