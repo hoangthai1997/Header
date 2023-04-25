@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: gray;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar_list {
+  display: flex;
+  gap: 15px;
+}
+
+.logo_img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+.navbar_link {
+  color: black;
+  font-size: 20px;
+}
+
+.navbar_link:hover {
+  opacity: 0.5;
+}
