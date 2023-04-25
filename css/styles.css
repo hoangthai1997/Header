@@ -61,13 +61,41 @@ nav {
   padding: 15px 0;
   list-style: none;
   width: 250px;
+  border: 1px solid #434343;
+  top: 58px;
+  display: none;
+}
+
+#main-menu li:hover > ul.sub-menu {
+  display: block;
+  animation-name: move-bottom-up;
+  animation-duration: 0.5s;
+}
+
+@keyframes move-bottom-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 #main-menu ul.sub-menu a {
   padding: 8px 15px;
   border-bottom: 1px solid #434343;
+  left: 0;
+}
+
+#main-menu ul.sub-menu li:hover > a {
+  border-bottom: 1px solid #6e6e6e;
 }
 
 #main-menu ul.sub-menu li:last-child a {
   border: none;
+}
+
+#main-menu ul.sub-menu ul.sub-menu {
+  left: 249px;
+  top: -16px;
 }
