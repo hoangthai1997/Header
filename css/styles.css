@@ -18,7 +18,7 @@
 
 /* For mobile */
 nav {
-  display: flex;
+  display: none;
   justify-content: space-between;
   justify-items: center;
   flex-direction: column;
@@ -30,11 +30,11 @@ nav {
 
 /* For mobile */
 #logo svg {
-  max-width: 50px;
+  max-width: 37px;
   height: auto;
   position: relative;
   left: 10px;
-  top: 10px;
+  top: -37px;
 }
 
 /* For mobile */
@@ -44,6 +44,8 @@ nav {
   margin: 0;
   padding: 0;
   flex-direction: column;
+  position: relative;
+  top: -35px;
 }
 
 #main-menu li {
@@ -157,50 +159,33 @@ nav {
 }
 
 /* For mobile */
-.menu-hamburger {
-  display: inline-block;
+#toggle {
+  display: block;
+  background: #353b48;
+  color: #fff;
+  text-align: right;
+  padding: 10px;
+  font-size: 20px;
   cursor: pointer;
-  list-style: none;
-  position: absolute;
-  right: 10px;
-  top: 5px;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
 }
 
 @media only screen and (min-width: 768px) {
   /* For desktop */
   nav {
     flex-direction: row;
+    display: flex;
   }
 
   #main-menu {
     flex-direction: row;
+    position: relative;
+    top: 0;
   }
 
   #logo svg {
     left: 0;
     top: 0;
+    max-width: 50px;
   }
 
   #main-menu ul.sub-menu {
@@ -218,7 +203,7 @@ nav {
     right: 0;
   }
 
-  .menu-hamburger {
+  #toggle {
     display: none;
   }
 }
