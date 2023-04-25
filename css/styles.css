@@ -120,7 +120,7 @@ nav {
 }
 
 #main-menu > li.has-child::after {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f107";
   color: #eceaea;
@@ -130,8 +130,12 @@ nav {
   padding: 21px 0;
 }
 
+#main-menu .sub-menu > li:hover > a {
+  color: orange;
+}
+
 #main-menu .sub-menu > li.has-child::after {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f105";
   color: #eceaea;
@@ -139,4 +143,8 @@ nav {
   top: 0;
   right: 10px;
   padding: 10px 0;
+}
+
+#main-menu .sub-menu > li.has-child:hover::after {
+  color: orange;
 }
