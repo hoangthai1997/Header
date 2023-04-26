@@ -71,11 +71,12 @@ nav {
   list-style: none;
   width: 100%;
   border: 1px solid #434343;
-  top: 58px;
+  top: 57px;
   display: none;
   z-index: 1;
 }
 
+/* For mobile */
 #main-menu li:hover > ul.sub-menu {
   display: block;
   animation-name: move-bottom-up;
@@ -210,5 +211,22 @@ nav {
 
   #toggle {
     display: none;
+  }
+
+  #main-menu li:hover > ul.sub-menu {
+    display: block;
+    animation-name: move-bottom-up;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes move-bottom-up {
+    from {
+      transform: translateY(100%);
+      opacity: 0.4;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 0.5;
+    }
   }
 }
