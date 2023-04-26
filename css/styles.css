@@ -35,6 +35,8 @@ nav {
   position: relative;
   left: 10px;
   top: -37px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* For mobile */
@@ -58,6 +60,7 @@ nav {
   padding: 18px 20px;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 /* For mobile */
@@ -174,10 +177,12 @@ nav {
   nav {
     flex-direction: row;
     display: flex;
+    align-items: center;
   }
 
   #main-menu {
     flex-direction: row;
+    align-items: center;
     position: relative;
     top: 0;
   }
