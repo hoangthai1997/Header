@@ -143,7 +143,7 @@ nav {
 }
 
 #main-menu .sub-menu > li:hover > a {
-  color: orange;
+  color: #00ffff;
 }
 
 #main-menu .sub-menu > li.has-child::after {
@@ -158,7 +158,7 @@ nav {
 }
 
 #main-menu .sub-menu > li.has-child:hover::after {
-  color: orange;
+  color: #00ffff;
 }
 
 /* For mobile */
